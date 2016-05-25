@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Heroes of Uppsala</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="html/css/style.css">
@@ -51,5 +51,16 @@ and open the template in the editor.
                 
             </div>
         </div>
+        <div class="section group" id="footer">
+                <div class="col span_1_of_3">
+                    footer 1
+                </div>
+                <div class="col span_1_of_3">
+                    footer 2
+                </div>
+                <div class="col span_1_of_3">
+                    footer 3
+                </div>
+            </div>
     </body>
 </html>
