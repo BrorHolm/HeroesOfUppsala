@@ -52,14 +52,14 @@ and open the template in the editor.
             </div>
         </div>
         <div class="section group" id="footer">
-                <div class="col span_1_of_3">
-                    footer 1
+                <div class="col span_1_of_3" id="profile_footer">
+                    <a href="profile.php"><img src="html/img/profil.jpg" alt="Heroes of Uppsala"></a>
                 </div>
-                <div class="col span_1_of_3">
-                    footer 2
+                <div class="col span_1_of_3" id="join_footer">
+                    <a href="register.php">Don't let your time at Uppsala be a bore, join now!</a>
                 </div>
-                <div class="col span_1_of_3">
-                    footer 3
+                <div class="col span_1_of_3" id="about_footer">
+                    <a href="about.php">Read more about Heroes of Uppsala</a>
                 </div>
             </div>
     </body>

@@ -69,6 +69,32 @@ h1 {
         
 }
 
+/* FOOTER */
+
+#profile_footer img{
+   height: 450px;
+   width: 450px;
+}
+
+#about_footer {
+   min-width: 450px;
+   height: auto;
+   background-image: url("img/studenter.jpg");
+   height: 450px;
+}
+
+#join_footer {
+   min-width: 450px;
+   height: auto;
+   background-image: url("img/boring.jpg");
+   height: 450px;
+}
+
+
+
+
+
+
 /*  COLUMN SETUP  */
 .col {
 	display: block;
