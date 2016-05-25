@@ -6,18 +6,9 @@ and open the template in the editor.
 -->
 <html>
     <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta charset="utf-8">
-		
-		
+			<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/c'>
         <title>Heroes of Uppsala</title>
-
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="HoU.css">
     </head>
@@ -34,7 +25,6 @@ and open the template in the editor.
                         <li><a href="mission.php">MISSIONS</a></li>
                         <li><a href="about.php">ABOUT</a></li>
                         <li><a href="contact.php">CONTACT</a></li>
-
                     </ul>
                 </div>
             </div>
@@ -49,23 +39,22 @@ and open the template in the editor.
                 
                 
                 <div class="section group">
-                    <div class="login_forms" id="content">
-                        <h1>Register</h1>
-						<form method="POST" action="register-process.php" >
+                    <div class="col span_3_of_3" id="content">
+                        <h1>Do you want to save the day?</h1>
+                        <p>Do you sometimes feel like the weekday becomes a bit dull? That you would like new perspectives, friends and abilities? That you would like to make a difference? Fear no more, because now you have the chance to save the day!</p>
 
+                        <p>Heroes of Uppsala provides the possibility to make nonprofit missions and nonprofit volunteers to meet, creating amazing connections. Just by register an account you will have access to possibilities you could only dream of.</p>
 
-							<input name="email" id="email" type="text" placeholder="E-Mail">
-							
-
-
-							<input name="password" id="password" type="password" placeholder="Password">
-							<input name="password2" id="password2" type="password" placeholder="Password">
-							<input id="login_button" type="submit" value="Register">
-						</form>
+                        <p>You are just minutes away from  entering a new world!</p>
 
                     </div>
                 </div>    
-
+                <div class="section group">
+                    <div class="col span_3_of_3" id="content">
+                        <h1>What we are all about</h1>
+                        <p>We think that it should be easy to meet new people that are dedicated to what they believe in. Creating new things, gaining experience and connecting with people should not be more than a couple of clicks away. </p>
+                    </div>
+                </div>
                 
             </div>
         </div>
