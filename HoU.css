@@ -1,0 +1,144 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-maj-23, 18:34:59
+    Author     : Mikael
+*/
+
+/*  SECTIONS  */
+
+
+html {
+    background-color: #fafafa;
+}
+
+
+#header {
+    background-color: #f3f3f3;
+    border-color: #0E6972;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    display: block;
+	font-size: 300%;
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #109121;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+	font-family: 'ITC Franklin Gothic', Arial, sans-serif;
+}
+
+#content {
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+	margin: auto;
+}
+
+p {
+	font-size: 200%
+}
+
+#nav li a:hover {
+    background-color: #0E6972;
+}
+
+#leftnav {
+    
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+        
+}
+
+/* LOGIN FORM */
+
+#email {
+
+display:block;
+
+}
+
+#password {
+	display;block;
+}
+
+
+#login_button {
+	display:block;
+	/*background-color:#109121*/
+	padding:5px 25px; /*add some padding to the inside of the button*/
+	background:#35b128; /*the colour of the button*/
+	border:1px solid #33842a; /*required or the default border for the browser will appear*/
+	/*give the button curved corners, alter the size as required*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+	/*style the text*/
+	color:#f3f3f3;
+	font-size:1.1em;
+}
+
+#login_button:hover {
+    background-color: #0E6972;
+}
+
+
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+        
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
