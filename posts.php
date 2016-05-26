@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-					<?php
-						session_start();
-						session_destroy();
-						header("location:login.php");
-					?>
-=======
 <?php
 
 /* 
@@ -13,4 +6,3 @@
  * and open the template in the editor.
  */
 
->>>>>>> refs/remotes/origin/master
