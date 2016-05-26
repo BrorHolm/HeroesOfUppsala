@@ -1,3 +1,25 @@
+<?php
+session_start();
+if(isset($_SESSION['user_email']))
+{
+	echo "Någon är inloggad";
+	echo $_SESSION['user_email'] . "är inloggad";
+	if($_SESSION['admin'] == 0)
+	{
+		echo "Du är inte admin";
+	}
+	else if ($_SESSION['admin'] == 1)
+	{
+		echo "Du har adminrättigheter.";
+	}
+}
+else {
+	echo "Ingen  är inloggad";
+}
+
+?>
+
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -45,7 +67,7 @@ and open the template in the editor.
             <!--<div class="col span_1_of_3" id="leftnav">
                 <img src="heroesofuppsala.png" alt="Heroes of Uppsala">
             </div>-->
-		<p> content dkdlkgnfdjn ksjfdkjngkfjnf ökdjgökngkjfngjdkfn </p>
+		<p></p>
         </div>
     </body>
 </html>
