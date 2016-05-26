@@ -45,25 +45,7 @@ and open the template in the editor.
             <!--<div class="col span_1_of_3" id="leftnav">
                 <img src="heroesofuppsala.png" alt="Heroes of Uppsala">
             </div>-->
-            <div class="col span_2_of_3" id="content">
-                
-                
-                <div class="section group">
-                    <div class="login_forms" id="content">
-                        <h1>Log in</h1>
-						<form method="POST" action="login-process.php" >
-
-							<input name="email" id="email" type="text" placeholder="E-Mail">
-
-							<input name="password" id="password" type="password" placeholder="Password">
-							
-							<input id="login_button" type="submit" value="Log in">
-						</form>
-
-                    </div>
-                </div>    
-                
-            </div>
+		<p> content dkdlkgnfdjn ksjfdkjngkfjnf ökdjgökngkjfngjdkfn </p>
         </div>
     </body>
 </html>
