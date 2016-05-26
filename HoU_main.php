@@ -6,8 +6,17 @@ and open the template in the editor.
 -->
 <html>
     <head>
+<<<<<<< HEAD
+<<<<<<< HEAD
 			<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/c'>
         <title>Heroes of Uppsala</title>
+=======
+        <title>TODO supply a title</title>
+>>>>>>> refs/remotes/origin/dev
+=======
+			<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/c'>
+        <title>Heroes of Uppsala</title>
+>>>>>>> refs/remotes/origin/senaste_beata
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="HoU.css">

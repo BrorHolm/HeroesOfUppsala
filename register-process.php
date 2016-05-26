@@ -10,7 +10,11 @@
 
 	registerUser($connection, $reg_password, $reg_email);
 	
+<<<<<<< HEAD
+	function registerUser($connection, $password, $email) //kom ihåg att inkl $connection
+=======
 	function registerUser($connection, $reg_password, $reg_email) //kom ihåg att inkl $connection
+>>>>>>> refs/remotes/origin/senaste_beata
 	{
 		//http://www.w3schools.com/php/php_mysql_insert.asp
 		//nedanstående är hittat här
@@ -19,11 +23,18 @@
 		$salt = createSalt();
 		
 		//Skapar hashat lösenord, det vill säga lägger ihop salt och lösenord. Eftersom sha1 användes i funktionen
+<<<<<<< HEAD
+		//createUniqueSalt måste samma användas här. Detta för att saltet ska bli rätt. 
+		$hashed_password = sha1($salt.$password);
+		
+		$emailQuery = "SELECT Mail FROM User WHERE UserMail = '$email'";
+=======
 		//createSalt måste samma användas här. Detta för att saltet ska bli rätt. 
 		$hashed_password = sha1($salt.$password);
 		
 		$emailQuery = "SELECT Mail FROM User WHERE UserMail == '$reg_email'";
 
+>>>>>>> refs/remotes/origin/senaste_beata
 		$resultEmail = $connection->query($emailQuery);
 
 		if (mysqli_num_rows($resultEmail) > 0)
@@ -38,7 +49,11 @@
 			//som läggs in. Saltet sparas tillsammans med uppgifterna då det fungerar som en nyckel när användaren sen ska logga in, 
 			//och det hashade inputlösenordet ska jämföras med det hashade lösenordet i databasen.
 			$sql4 = "INSERT INTO User (UserMail, Password, Salt)
+<<<<<<< HEAD
+					VALUES ('$email', '$hashed_password', '$salt')";
+=======
 					VALUES ('$reg_email', '$hashed_password', '$salt')";
+>>>>>>> refs/remotes/origin/senaste_beata
 					
 				
 				doQuery($connection, $sql4);

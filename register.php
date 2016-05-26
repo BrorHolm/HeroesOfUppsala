@@ -51,6 +51,18 @@ and open the template in the editor.
                 <div class="section group">
                     <div class="login_forms" id="content">
                         <h1>Register</h1>
+<<<<<<< HEAD
+						<form method="POST" action="register-process.php" >
+
+
+							<input name="email" id="email" type="text" placeholder="E-Mail">
+							
+
+
+							<input name="password" id="password" type="password" placeholder="Password">
+							<input name="password2" id="password2" type="password" placeholder="Password">
+							<input id="login_button" type="submit" value="Register">
+=======
 						<form method="POST" action="register-process.php" onsubmit="return validateInput()">
 
 							<input name="email" id="email" type="text" placeholder="E-Mail">
@@ -58,6 +70,7 @@ and open the template in the editor.
 							<input name="password2" id="password2" type="password" placeholder="Password">
 							<input id="login_button" type="submit" value="Register">
 							
+>>>>>>> refs/remotes/origin/senaste_beata
 						</form>
 
                     </div>
@@ -66,6 +79,9 @@ and open the template in the editor.
                 
             </div>
         </div>
+<<<<<<< HEAD
+=======
 			<script src="register.js"> </script>
+>>>>>>> refs/remotes/origin/senaste_beata
     </body>
 </html>
