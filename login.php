@@ -15,10 +15,15 @@ and open the template in the editor.
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta charset="utf-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 		
 =======
 >>>>>>> refs/remotes/origin/dev
+=======
+		
+		
+>>>>>>> refs/remotes/origin/senaste_beata
         <title>Heroes of Uppsala</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,15 +60,17 @@ and open the template in the editor.
                     <div class="login_forms" id="content">
                         <h1>Log in</h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<form method="POST" action="login-process.php" >
 =======
 						<form method="POST" action="process-data.php" >
 >>>>>>> refs/remotes/origin/dev
 
+=======
+						<form method="POST" action="login-process.php" >
+>>>>>>> refs/remotes/origin/senaste_beata
 
 							<input name="email" id="email" type="text" placeholder="E-Mail">
-							
-
 
 							<input name="password" id="password" type="password" placeholder="Password">
 							
@@ -73,6 +80,7 @@ and open the template in the editor.
                     </div>
                 </div>    
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 <div class="section group">
                     <div class="col span_3_of_3" id="content">
@@ -81,6 +89,8 @@ and open the template in the editor.
                     </div>
                 </div>
 >>>>>>> refs/remotes/origin/dev
+=======
+>>>>>>> refs/remotes/origin/senaste_beata
                 
             </div>
         </div>
