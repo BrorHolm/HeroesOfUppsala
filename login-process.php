@@ -16,10 +16,9 @@
 		function loginUser($connection, $Email, $Password)
 		{
 			//Väljer alla de rader där mejladressen == användarens input av mejladressen.
-			$selectedRow = "SELECT * FROM User WHERE UserMail == '$Email'";
+			$selectedRow = "SELECT * FROM User WHERE UserMail = '$Email'";
 			
 			$selectedResult = doQuery($connection, $selectedRow);
-			
 			
 			
 			//num_rows returnerar antalet rader i result-setet. Dvs, om användaren finns ska den loggas in:
@@ -30,6 +29,7 @@
 				$databaseSalt = $row['Salt'];
 				$databasePassword = $row['Password'];
 				
+	
 				//Här hashas inputlösenordet på samma vis som vid registreringen, och läggs i variabeln $hashedPw.
 				$hashedPw = sha1($databaseSalt.$Password);
 				
@@ -37,22 +37,23 @@
 				//användaren in och redirectas till kommentarssidan.
 				if($hashedPw == $databasePassword)
 					{
-
-						session_start();
 						// Startar en session:
-						$_SESSION['reg_email']= $Email; 
+						session_start();
+						
+						$_SESSION['admin'] = 1;
+						$_SESSION['user_email'] = $Email; 
 						header("location: mission.php");
 					}
 					else
 					{
-						header("location: HoU_main.php");
+						header("location: login.php");
 						echo "Wrong e-mail or password.";
 					}
 			}	
-			
+
 			else
 			{
-				header("location: register.php");
+				//header("location: register.php");
 				echo "You are not registered. Please do so :-)";
 			}
 		}

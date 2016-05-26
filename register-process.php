@@ -20,9 +20,9 @@
 		
 		//Skapar hashat lösenord, det vill säga lägger ihop salt och lösenord. Eftersom sha1 användes i funktionen
 		//createSalt måste samma användas här. Detta för att saltet ska bli rätt. 
-		$hashed_password = sha1($salt.$password);
+		$hashed_password = sha1($salt.$reg_password);
 		
-		$emailQuery = "SELECT Mail FROM User WHERE UserMail == '$reg_email'";
+		$emailQuery = "SELECT UserMail FROM User WHERE UserMail = '$reg_email'";
 
 		$resultEmail = $connection->query($emailQuery);
 
