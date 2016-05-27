@@ -34,13 +34,10 @@
 			die();
 		}
 		else {
-			//När vi sedan lägger in användarens information i tabellen User, är det det hashade (alltså skyddade/krypterade) lösenordet
-			//som läggs in. Saltet sparas tillsammans med uppgifterna då det fungerar som en nyckel när användaren sen ska logga in, 
-			//och det hashade inputlösenordet ska jämföras med det hashade lösenordet i databasen.
+
 			$sql4 = "INSERT INTO User (UserMail, Password, Salt)
 					VALUES ('$reg_email', '$hashed_password', '$salt')";
 					
-				
 				doQuery($connection, $sql4);
 				header("location: login.php");
 

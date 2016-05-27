@@ -1,13 +1,15 @@
 <?php
-	
+
 	//ansluter till databasen, sparas i $connection
 	include('db.php');
 
 	//hämta UserID utifrån aktuell session
-	$Email = $_SESSION['user_email'];
+	/*$Email = $_SESSION['user_email'];
 	$query = "SELECT UserID FROM User WHERE UserMail = '$Email'";
 	$result = doQuery($connection, $query);
-	$UserID = mysqli_fetch_assoc($result)['UserID'];
+	$UserID = mysqli_fetch_assoc($result)['UserID'];*/
+
+	$UserID = $_SESSION['user_ID'];
 
 	//hämtar alla organisationer som UserID är kopplad till, spara i result
 	//joinar även User_Provider med Provider

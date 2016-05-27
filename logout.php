@@ -25,15 +25,30 @@ and open the template in the editor.
 		<div id="nav">    
             <div class="section group">
                 <div class="col span_3_of_3">
-                    <ul>
+                    <ul> <?php
+						session_start();
+						if(isset($_SESSION['user_email']))
+						{ ?>
                         <li><a href="index.php">START</a></li>
-						<li><a href="login.php">LOG IN</a></li>
+						<!-- <li><a href="login.php">LOG IN</a></li>-->
                         <li><a href="logout.php">LOG OUT</a></li>
-						<li><a href="register.php">REGISTER</a></li>
+						<!-- <li><a href="register.php">REGISTER</a></li>-->
                         <li><a href="profile.php">PROFILE</a></li>
                         <li><a href="mission.php">MISSIONS</a></li>
                         <li><a href="about.php">ABOUT</a></li>
                         <li><a href="contact.php">CONTACT</a></li>
+						<?php }
+						else 
+						{ ?>
+						<li><a href="index.php">START</a></li>
+						<li><a href="login.php">LOG IN</a></li>
+                        <!-- <li><a href="logout.php">LOG OUT</a></li>-->
+						<li><a href="register.php">REGISTER</a></li>
+                        <!--<li><a href="profile.php">PROFILE</a></li>-->
+                        <li><a href="mission.php">MISSIONS</a></li>
+                        <li><a href="about.php">ABOUT</a></li>
+                        <li><a href="contact.php">CONTACT</a></li>
+						<?php } ?>
 
                     </ul>
                 </div>
