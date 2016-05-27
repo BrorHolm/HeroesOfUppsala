@@ -40,13 +40,23 @@
 						// Startar en session:
 						session_start();
 						
+						$_SESSION['user_email']= $Email; 
 						$_SESSION['admin'] = 1;
-						$_SESSION['user_email'] = $Email; 
-						header("location: mission.php");
+						
+						//Sätt sessionens user_ID
+						$sql77 = "SELECT `UserID` FROM `User` WHERE UserMail ='$Email'";
+						$userID1 = doQuery($connection, $sql77);
+						
+						while($row = mysqli_fetch_array($userID1))
+						{
+							$_SESSION['user_ID'] = $row['UserID'];
+						}
+
+						header("location: profile.php");
 					}
 					else
 					{
-						header("location: login.php");
+						// header("location: HoU_main.php");
 						echo "Wrong e-mail or password.";
 					}
 			}	

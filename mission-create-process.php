@@ -16,6 +16,9 @@
 	$query = "INSERT INTO Mission VALUES (NULL, '$provider', '$title', '$description', '$address', '$start', '$end', '$is_paid', 0)";
 	doQuery($connection, $query);
 
+	//skicka användaren till missions-sidan
+	header("location: missions.php");
+
 	//använd echo-statementet nedan för att se inputtad data
 	/*echo $provider."<br>".
 	$title."<br>".

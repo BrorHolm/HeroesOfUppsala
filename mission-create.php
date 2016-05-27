@@ -14,7 +14,7 @@ if(isset($_SESSION['user_email']))
 	}
 }
 else {
-	echo "Ingen  är inloggad";
+	echo "Ingen är inloggad";
 }
 
 ?>
@@ -53,7 +53,7 @@ and open the template in the editor.
                         <li><a href="logout.php">LOG OUT</a></li>
 						<li><a href="register.php">REGISTER</a></li>
                         <li><a href="profile.php">PROFILE</a></li>
-                        <li><a href="mission.php">MISSIONS</a></li>
+                        <li><a href="missions.php">MISSIONS</a></li>
                         <li><a href="about.php">ABOUT</a></li>
                         <li><a href="contact.php">CONTACT</a></li>
 
@@ -101,7 +101,7 @@ and open the template in the editor.
                         <input name="mission_is_paid" type="checkbox">Display mission on front page (10 SEK)
                     </div>
                     <div>
-                        <input id="create_button" type="submit" value="Create Mission">
+                        <input name="create_button" type="submit" value="Create Mission">
                     </div>
                 </form>
             </div>

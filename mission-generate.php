@@ -1,3 +1,24 @@
+<?php
+session_start();
+if(isset($_SESSION['user_email']))
+{
+    echo "Någon är inloggad";
+    echo $_SESSION['user_email'] . "är inloggad";
+    if($_SESSION['admin'] == 0)
+    {
+        echo "Du är inte admin";
+    }
+    else if ($_SESSION['admin'] == 1)
+    {
+        echo "Du har adminrättigheter.";
+    }
+}
+else {
+    echo "Ingen är inloggad";
+}
+
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -17,7 +38,6 @@ and open the template in the editor.
             <div class="section group">
                 <div class="col span_3_of_3">
                     <ul> <?php
-						session_start();
 						if(isset($_SESSION['user_email']))
 						{ ?>
                         <li><a href="index.php">START</a></li>
@@ -40,7 +60,6 @@ and open the template in the editor.
                         <li><a href="about.php">ABOUT</a></li>
                         <li><a href="contact.php">CONTACT</a></li>
 						<?php } ?>
-
                     </ul>
                 </div>
             </div>
@@ -52,26 +71,9 @@ and open the template in the editor.
                 <img src="heroesofuppsala.png" alt="Heroes of Uppsala">
             </div>-->
             <div class="col span_2_of_3" id="content">
-                
-                
-                <div class="section group">
-                    <div class="col span_3_of_3" id="content">
-                        <h1>Do you want to save the day?</h1>
-                        <p>Do you sometimes feel like the weekday becomes a bit dull? That you would like new perspectives, friends and abilities? That you would like to make a difference? Fear no more, because now you have the chance to save the day!</p>
-
-                        <p>Heroes of Uppsala provides the possibility to make nonprofit missions and nonprofit volunteers to meet, creating amazing connections. Just by register an account you will have access to possibilities you could only dream of.</p>
-
-                        <p>You are just minutes away from  entering a new world!</p>
-
-                    </div>
-                </div>    
-                <div class="section group">
-                    <div class="col span_3_of_3" id="content">
-                        <h1>What we are all about</h1>
-                        <p>We think that it should be easy to meet new people that are dedicated to what they believe in. Creating new things, gaining experience and connecting with people should not be more than a couple of clicks away. </p>
-                    </div>
-                </div>
-                
+                <?php
+					include("mission-generate-process.php");						
+                ?>
             </div>
         </div>
     </body>
